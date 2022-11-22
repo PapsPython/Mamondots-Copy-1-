@@ -1,0 +1,251 @@
+html, body {
+  height: 100vh;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color:linear- 
+ gradient(bottomtotop, gray,white);
+  overflow:hidden;
+}
+
+header{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  margin:30px 0;
+}
+ 
+.list{
+  display:flex;
+  flex-direction:row;
+  list-style-type:none;
+}
+
+.type{
+  font-size:2.8rem;
+}
+
+.list a{
+  text-decoration:none;
+  padding-left:30px;
+  color:black;
+  text-transform:uppercase;
+ }
+
+header .highgreen,
+.list .highgreen,
+.introduction .highgreen,
+.list a:hover{
+  color:#2cd494;
+  font-weight:bold;
+ }
+
+.btn{
+  background:#2cd494;
+  padding:8px 30px;
+  font-size:18px;
+  color:#fff;
+  border-radius:5px;
+  border:none;
+  letter-spacing:1px;
+  text-transform:capitlize;
+  transition:1.2s;
+ }
+
+.btn:hover {
+  background-color:transparent;
+  border: 1px solid #2cd494;
+  color:#2cd494;
+  cursor:pointer;
+  transition:0.8s;
+}
+
+.myprofile {
+  display: flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items:center;
+  margin:100px 30px;
+  box-sizing: border-box;
+ }
+
+.introduction{
+  flex-basis:40%;
+  padding:30px 120px;
+}
+
+.introduction .details{
+  font-size:16px;
+  line-height:1.5;
+  padding:15px 0;
+  color:#6e6d6d;
+}
+
+.introduction a i{
+  border:2px solid black;
+  padding:5px;
+  border-bottom-right-radius:20px;
+  border-top-right-radius:20px;
+  border-top-left-radius:20px;
+}
+
+.introduction a .facebook{
+  color: rgb(65,65,181);
+  transition:0.3s;
+  border-style:solid;
+  border-color:rgb(65,65,181);
+ }
+
+.introduction a .facebook:hover{
+  background-color:rgb(65,65,181);
+  color:#fff;
+ }
+
+.introduction a i{
+  border:2px solid black;
+  padding:5px;
+  border-bottom-right-radius:20px;
+  border-top-right-radius:20px;
+  border-top-left-radius:20px;
+}
+
+.introduction a .insta{
+  color: rgb(181,80,65);
+  transition:0.3s;
+  border-style:solid;
+  border-color:rgb(181,80,65);
+ }
+
+.introduction a .insta:hover{
+  background-color:rgb(181,80,65);
+  color:#fff;
+ }
+
+
+.introduction a .twitter{
+  color: rgb(108,189,243);
+  transition:0.3s;
+  border-style:solid;
+  border-color:rgb(108,189,243);
+ }
+
+.introduction a .twitter:hover{
+  background-color:rgb(108,189,243);
+  color:#fff;
+ }
+
+.introduction a .linkedin{
+  color: rgb(0, 119, 181);
+  transition:0.3s;
+  border-style:solid;
+  border-color:rgb(0, 119, 181);
+ }
+
+.introduction a .linkedin:hover{
+  background-color:rgb(0, 119, 181);
+  color:#fff;
+ }
+
+.introduction a .pinterest{
+  color: rgb(230, 0, 35);
+  transition:0.3s;
+  border-style:solid;
+  border-color:rgb(230, 0, 35);
+ }
+
+.introduction a .pinterest:hover{
+  background-color:rgb(230, 0, 35);
+  color:#fff;
+ }
+
+.linktowork a{
+  text-decoration:none;
+  color:black;
+  border-bottom: 2px solid orange;
+  max-width:70px;
+}
+
+.linktowork a i{
+  border:none;
+}
+
+.linktowork:hover i{
+  transform: translateX(60%);
+  transition:0.8s;
+}
+
+.resize{
+  position:relative;
+  width:400px;
+  height:300px;
+  border-radius:5px;
+  z-index:2;
+}
+
+.animated{
+ position:absolute;
+ top:35vh;
+ right:72vh;
+ z-index:2;
+}
+
+.animated2{
+ position:absolute;
+ bottom:20vh;
+ right:70vh;
+ z-index:2;
+}
+
+ .animated{
+   animation-name:img1;
+   animation-duration:8s;
+   animation-direction:linear;
+   animation-iteration-count:infinite;
+}
+
+@keyframes img1{
+  0% {
+   transform:translateY(40px) scale(1);
+  }
+
+  50%{
+    transform:translateY(-40px) scale(1.5);
+  } 
+  
+  100% {
+   transform:translateY(40px) scale(1); 
+  }
+}
+
+.animated2{
+  animation-name:img2;
+  animation-duration:8s;
+  animation-iteration-count:infinite;
+  animation-direction:linear;
+}
+
+@keyframes img2{
+  0%{
+    transform:translateX(20px);
+ }
+  50%{
+    transform:translateX(-20px);
+  }
+  100%{
+    transform:translateX(20px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
